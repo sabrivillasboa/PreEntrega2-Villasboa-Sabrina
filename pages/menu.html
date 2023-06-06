@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/servicios.css">
-    <link rel="icon" href="../images/trucker.png" type="image/png">
-    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Menu</title>
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-light container-fluid">
@@ -22,10 +21,10 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./servicios.html">Servicios</a>
+                <a class="nav-link" href="#">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./menu.html">Menu</a>
+                <a class="nav-link" href="#">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -40,43 +39,46 @@
           </div>
         </div>
     </nav>
-    <div id="grilla">
-        <main id="hero" class="hero-servicios">
-          <div class="img-hero-servicios">
-            <img src="../images/moto-delivery.png" alt="moto-delivery">
-          </div>
-          <div class="titulo-servicios">
-            <h2>Tu pedido en la puerta de tu casa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde facere omnis vel earum? Totam maiores saepe earum quidem neque ab, cupiditate, blanditiis recusandae animi suscipit non enim aperiam quisquam.</p>
-          </div>
-        </main>
-        <div id="titulo" class="subtitulo-servicios">
-          <p>- Nuestros servicios -</p>
-          <h3>Nuestros servicios solo para vos</h3>
+    <!-- <header>
+        <nav>
+            <span>Food House</span>
+            <ul> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#" class="registro-login">Registrate</a></li>
+                <li><a href="#" class="registro-login">Login</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main class="hero-menu">
+        <div class="contenedor-imagenes-carrete">
+            <img id="img1" src="../images/sandwich1.png" alt="">
+            <img id="img2" src="../images/pizza.png" alt="">
+            <img id="img3" src="../images/tacos.jpeg" alt="">
         </div>
-        <div id="servicio1" class="img-servicio">
-          <div class="servicio">
-            <img src="../images/moto-servicios.png" alt="">
-          <h4>Titulo servicio 1</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur</p>
-          </div>
+    </main>
+    <section class="seccion-menu">
+        <div class="subitulo-menu">
+            <h3>Sabores que son tendencia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem non, dolorem cupiditate harum cum soluta optio sequi aliquam illo labore nam assumenda repellat. Aspernatur nulla quas vel quasi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo deserunt molestias, voluptas, aliquam totam maxime commodi fuga neque doloremque repellendus non labore ipsa cum. Quaerat beatae omnis eaque deserunt?</p>
         </div>
-        <div id="servicio2" class="img-servicio">
-          <div class="servicio">
-            <img src="../images/pana.png" alt="">
-            <h4>Titulo servicio 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur</p>
-          </div>
+        <div class="buscador-menu">
+            <label for="buscador">Busca tu pedido</label>
+            <input type="text" name="buscador" id="">
         </div>
-        <div id="servicio3" class="img-servicio">
-          <div class="servicio">
-            <img src="../images/amico.png" alt="">
-            <h4>Titulo servicio 3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur</p>
-          </div>
+        <div class="cards">
+            <div class="cards-div"><img src="../images/pizza.png" alt=""><h4>Pizzas</h4></div>
+            <div class="cards-div"><img src="../images/empanadas.jpg" alt=""><h4>Empanadas</h4></div>
+            <div class="cards-div"><img src="../images/sandwich1.png" alt=""><h4>Sandwich</h4></div>
+            <div class="cards-div"><img src="../images/tacos.jpeg" alt=""><h4>Tacos</h4></div>
+            <div class="cards-div"><img src="../images/helado.jpg" alt=""><h4>Tentaciones</h4></div>
+            <div class="cards-div"><img src="../images/Coca.jpg" alt=""><h4>Bebidas</h4></div>
         </div>
-        <footer id="piePag" class="pie-pag">
-          <div class="footer-logo-y-redes">
+    </section>
+    <footer class="pie-pag">
+        <div class="logo-redes">
             <ul class="redes-sociales">
                 <hr>
                 <li><a href="#"><img src="../images/facebook.png" alt="facebook"></a></li>
@@ -85,25 +87,27 @@
                 <li><a href="#"><img src="../images/mail.png" alt="mail"></a></li>
                 <hr>
             </ul>
-            <a href="#">Food House</a>
+            <h5>Food House</h5>
         </div>
         <div class="footer-nav">
             <div class="div-footer-nav">
-                <p>Terminos y politicas</p>
+                <h5>
+                    Terminos y politicas
+                </h5>
                 <ul>
                     <li><a href="#">Politicas de privacidad</a></li>
                 </ul>
             </div>
             <div class="div-footer-nav">
-                <p>Compañia</p>
+                <h5>Compañia</h5>
                 <ul> 
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="#">Menu</a></li>
                 </ul>
             </div>
             <div class="div-footer-nav">
-                <p>Contactanos</p>
+                <h5>Contactanos</h5>
                 <ul>
                     <li><a href="./contacto.html">Contacto</a></li>
                     <li><a href="#">Registrate</a></li>
@@ -112,16 +116,12 @@
             </div>
         </div>
         <div class="div-footer-nav">
-            <p>
+            <h6>
                 © Copyright 2023 Sabrina Villasboa
-            </p>
+            </h6>
         </div>
-        </footer>
-    </div>
-
-
-
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>

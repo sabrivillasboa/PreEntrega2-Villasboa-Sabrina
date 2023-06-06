@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* Estilos Nav */
+
+
+.navbar-brand{
+    color: rgb(236, 153, 75);
+    width: 20%;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: #222224;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    width: 70%;
+    color: #EC994B;
+}
+
+/* Estilos Hero */
+
+.hero-menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-imagenes-carrete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1{
+    width: 45%;
+    height: 65%;
+    margin-top: 6rem;
+}
+
+#img2{
+    width: 45%;
+    height: 75%;
+    margin-top: 6rem;
+    position: absolute; 
+    z-index: 20; /*ver*/
+}
+
+#img3{
+    width: 45%;
+    height: 65%;
+    margin-top: 6rem;
+    border-radius: 20px;
+}
+
+/* Seccion Menu */
+
+.seccion-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.subitulo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subitulo-menu h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #222224;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding: 7rem 0 4rem;
+}
+
+.subitulo-menu p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 35px;
+    width: 70%;
+    color: #797979;
+    padding-bottom: 7rem;
+}
+
+.buscador-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    padding: 0 2rem 4rem;
+    
+}
+
+.buscador-menu label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+}
+
+.buscador-menu input{
+    width: 50%;
+    line-height: 1.7rem; 
+    border: 0.8px solid #EC994B;
+}
+
+.cards{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    padding: 2rem 2rem 10rem;
+}
+
+.cards-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.cards-div{
+    width: 30%;
+    height: 250px;
+    margin: 2rem 0;
+    border-radius: 1rem;
+}
+
+.cards-div h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #383638;
+}
+
+/* Estilos Footer */
+
+.pie-pag{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: #383638;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logo-redes{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+hr{
+    width: 30%;
+    color: #F5F5F5;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items:center;
+    width: 80%;
+
+} 
+
+.redes-sociales{
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales img{
+    width: 1.8rem;
+    padding-top: 1.8rem;
+    
+}
+.footer-logo-y-redes h5{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    font-size: 1.3rem;
+    padding: 0.8rem 0 0;
+}
+
+.footer-nav{
+    
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: space-around;
+
+}
+
+.div-footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #F5F5F5;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.div-footer-nav h5{
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+    /* align-items: flex-start; */
+    text-align: left;
+}
+
+.div-footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.div-footer-nav li{
+    padding: 0.1rem;
+}
+
+.div-footer-nav a{
+    color: #F5F5F5;
+}
+
+.div-footer-nav h6{
+    padding: 1rem 0;
+}
