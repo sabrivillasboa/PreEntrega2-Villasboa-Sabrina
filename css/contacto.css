@@ -128,7 +128,8 @@
 
 .seccion-mapa{
     display: flex;
-    width: 100%;
+    width: auto;
+    height: auto;
     padding: 8rem 0;
 }
 
@@ -264,6 +265,131 @@ hr{
 
 .div-footer-nav p{
     padding: 1rem 0;
+}
+
+
+/* Media querie Tablet */
+
+@media (min-whidth: 480px) and (max-width: 1023px) {
+    
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+            "hero-contacto"
+            "section-contacto"
+            "piePag";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        /* gap: 5rem; */
+    }
+    
+    
+    #hero-contacto{
+        grid-area: hero-contacto;
+    }
+    
+    #section-contacto{
+        grid-area: section-contacto;
+    }
+    
+    #piePag{
+        grid-area: piePag;
+    }
+
+
+    .contenedor-contacto{
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .contenedor-img{
+        width: 50%;
+    }
+
+    .contenedor-img img{
+        width: 90%;
+    }
+
+    .contenedor-form{
+        width: 40%;
+        padding: 0;
+    }
+
+    .contenedor-form form{
+        width: 90%;
+    }
+
+    .seccion-mapa{
+        height: auto;
+        padding: 0;
+    }
+
+    iframe{
+        width: 80%;
+        height: 70%;
+    }
+    
+    /* footer   */
+
+    .pie-pag{
+        width: 100%;
+        display: flex;
+        background-color: #383638;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    
+    .footer-logo-y-redes{
+        width: 100%;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    .footer-logo-y-redes a{
+        font-weight: 700;
+        color: #F5F5F5;
+        font-size: 1rem;
+        margin: 0.8rem 0;
+        text-decoration: none;
+    }
+    
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .div-footer-nav{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        color: #F5F5F5;
+    }
+    
+    
+    .div-footer-nav ul{
+        align-items: center;
+    }
+    
+    .div-footer-nav a{
+        font-size: 0.9rem;
+    }
+    
+    .div-footer-nav p{
+        padding: 0 0 0.5rem;
+        margin: 0 ;
+        font-size: 0.8rem;
+    }
+
 }
 
 
@@ -433,3 +559,6 @@ hr{
         font-size: 0.8rem;
     }
 }
+
+
+
