@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* Estilos Pagina Inicio BS */
+
+/* Nav */
+
+.navbar-brand{
+    color: rgb(236, 153, 75);
+    width: 20%;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: #222224;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    width: 70%;
+    color: #EC994B;
+}
+
+/* Hero */
+
+.btn{
+    background-color: #EC994B;
+    border: #EC994B;
+}
+
+/* Footer */
+
+.footer__link{
+    text-decoration: none;
+    color: #797979;
+}
+

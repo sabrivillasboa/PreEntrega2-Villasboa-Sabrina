@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* Nav */
+
+.navbar-brand{
+    color: rgb(236, 153, 75);
+    width: 20%;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: #222224;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    width: 70%;
+    color: #EC994B;
+}
+
+/* Estilos Pagina Servicios GRID + FLEX */
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+        "hero hero hero"
+        "titulo titulo titulo"
+        "servicio1 servicio2 servicio3"
+        "piePag piePag piePag";
+    grid-template-rows: 100% 30% 90% auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+
+#hero{
+    grid-area: hero;
+}
+
+#titulo{
+    grid-area: titulo;
+}
+
+#servicio{
+    grid-area: servicio;
+}
+
+#piePag{
+    grid-area: piePag;
+}
+
+.hero-servicios{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-hero-servicios{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+}
+
+.hero-servicios img{
+    width: 80%;
+}
+
+.titulo-servicios{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    gap: 3rem;
+}
+
+.titulo-servicios h2{
+    font-size: 3rem;
+    color: #222224;
+}
+
+.titulo-servicios p{
+    color: #797979;
+}
+
+.subtitulo-servicios{
+    margin: 2rem;
+}
+
+.subtitulo-servicios p, h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img-servicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.img-servicio img{
+    width: 80%;
+}
+
+.img-servicio h4{
+    color: #222224;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.img-servicio p{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.3rem;
+    width: 80%;
+    color: #797979;
+}
+
+/* Footer para todas las paginas*/
+
+.pie-pag{
+    width: 100%;
+    display: flex;
+    background-color: #383638;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.footer-logo-y-redes{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+hr{
+    width: 30%;
+    color: #F5F5F5;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+} 
+
+
+.redes-sociales img{
+    width: 1.8rem;
+    padding-top: 1.8rem;
+    
+}
+.footer-logo-y-redes a{
+    font-weight: 700;
+    color: #F5F5F5;
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+    text-decoration: none;
+}
+
+.footer-nav{
+    
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: space-around;
+
+}
+
+.div-footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #F5F5F5;
+}
+
+.div-footer-nav p{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    /* align-items: flex-start; */
+    text-align: left;
+}
+
+.div-footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.div-footer-nav a{
+    color: #F5F5F5;
+    font-size: 1rem;
+}
+
+.div-footer-nav p{
+    padding: 1rem 0;
+}
+
+
+/* Media querie Celular */
+
+@media (max-width: 479px){
+    
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+            "hero"
+            "titulo "
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "piePag";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        gap: 5rem;
+    }
+
+    .hero-servicios{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .titulo-servicios{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100vh;
+        justify-content:center;
+        align-items:center;
+        gap: 1rem;
+        
+    }
+
+.subtitulo-servicios{
+    margin: 0;
+}
+
+.subtitulo-servicios p{
+    font-size: 1.3rem;
+    color: #EC994B;
+}
+
+    .subtitulo-servicios h3{
+        width: 100%;
+    }
+
+    .img-hero-servicios{
+        display: flex;
+        width: 90%;
+        /* height: 80vh; */
+        height: auto;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .hero-servicios img{
+        width: 100%;
+    }
+
+    .img-servicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .img-servicio img{
+        width: 80%;
+    }
+    
+    .img-servicio h4{
+        color: #222224;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    
+    .img-servicio p{
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.3rem;
+        width: 80%;
+        color: #797979;
+    }
+
+    /* Footer responsive de todas las paginas*/
+
+    .pie-pag{
+        width: 100%;
+        display: flex;
+        background-color: #383638;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    
+    .footer-logo-y-redes{
+        width: 100%;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    .footer-logo-y-redes a{
+        font-weight: 700;
+        color: #F5F5F5;
+        font-size: 1rem;
+        margin: 0.8rem 0;
+        text-decoration: none;
+    }
+    
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .div-footer-nav{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        color: #F5F5F5;
+    }
+    
+    
+    .div-footer-nav ul{
+        align-items: center;
+    }
+    
+    .div-footer-nav a{
+        font-size: 0.9rem;
+    }
+    
+    .div-footer-nav p{
+        padding: 0 0 0.5rem;
+        margin: 0 ;
+        font-size: 0.8rem;
+    }
+}    
