@@ -270,7 +270,7 @@ hr{
 
 /* Media querie Tablet */
 
-@media (min-whidth: 480px) and (max-width: 1023px) {
+@media (max-width: 1200px) {
     
     #grilla{
         display: grid;
@@ -395,7 +395,7 @@ hr{
 
 /* Media quieries Celular */
 
-@media (max-width: 479px){
+@media (max-width: 599px){
 
 
     #grilla{
